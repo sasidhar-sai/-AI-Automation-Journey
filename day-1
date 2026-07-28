@@ -1,0 +1,16 @@
+print("=======================")
+print("Enter valied details")
+print("========================")
+name=(input("tell ur name:"))
+
+college=(input("tell ur college name:"))
+
+course=(input("mention ur course:"))
+
+language=(input("tell which language ur learning:"))
+print("student profile")
+print("========================")
+print("hi:",name)
+print("i am studing in ",college)
+print("my course name is ",course)
+print("i am learning:",language)
