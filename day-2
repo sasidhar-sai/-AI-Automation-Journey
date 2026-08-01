@@ -1,0 +1,36 @@
+import random
+print("choose the difficulty")
+print("1 - Easy")
+print("2 - medium")
+print("3 - Hard")
+
+choice=int(input("enter ur choice: "))
+if choice == 1:
+    limit = 50
+    max_attempts = 10
+elif choice == 2:
+    limit = 100
+    max_attempts = 7
+else:
+    limit = 500
+    max_attempts = 8
+    
+
+secret = random.randint(1,limit)
+attempts=0
+print("enter the number between 1 and ",limit)
+while attempts < max_attempts:
+    attempts +=1
+    guess=int(input("enter ur guessed number: "))
+    
+    if guess > secret:
+        print("your guess is high")
+    elif guess < secret:
+        print("your guess is low")
+    else:
+        print("correct")
+        print("u have guessed the number in attempts",attempts)
+        break
+if attempts== max_attempts and guess!=secret:
+    print("game is completed")
+    print("the correct number is: ",secret)
