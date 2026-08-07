@@ -1,0 +1,11 @@
+print("""========================
+     EXPENSE TRACKER
+========================""")
+expences={}
+num=int(input("how many expences do u have today: "))
+for i in range(num):
+    key = input("name of the expence: ")
+    value = int(input("what is the cose tfo the expence: "))
+    expences[key]=value
+print("expences: ",expences)
+print("total amount spent today: ",sum(expences.values()))
