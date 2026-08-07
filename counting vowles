@@ -1,0 +1,7 @@
+def vowles():
+    letter=input("enter a letter: ")
+    if letter==("a","e","i","o","u"):
+        print("u entered a vowel letter comes under vowel ")
+    else: 
+        print("u entered a consonent")
+vowles()
